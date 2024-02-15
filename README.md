@@ -1,10 +1,10 @@
-# Azure Translator 4 Java (AT4J) 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.brenoepics/at4j?color=blue)](https://central.sonatype.com/artifact/io.github.brenoepics/at4j)
-![Static Badge](https://img.shields.io/badge/azure--api-3.0-blue?style=flat&logo=microsoftazure&logoColor=%230080FF&color=%230080FF&link=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fai-services%2Ftranslator%2Freference%2Fv3-0-reference) 
-[![Static Badge](https://img.shields.io/badge/run-l?logo=postman&label=Postman&color=EF5B25)](https://www.postman.com/maintenance-astronaut-2993290/workspace/brenoepics/collection/18589822-dfe7a640-9b94-47a8-b19f-46cb9cc8843e?action=share&creator=18589822)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=brenoepics_at4j&metric=coverage)](https://sonarcloud.io/summary/new_code?id=brenoepics_at4j) 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=brenoepics_at4j&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=brenoepics_at4j)
+# Azure Translator 4 Java (AT4J)
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.brenoepics/at4j?color=blue)](https://central.sonatype.com/artifact/io.github.brenoepics/at4j)
+![Static Badge](https://img.shields.io/badge/azure--api-3.0-blue?style=flat&logo=microsoftazure&logoColor=%230080FF&color=%230080FF&link=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fai-services%2Ftranslator%2Freference%2Fv3-0-reference)
+[![Static Badge](https://img.shields.io/badge/run-l?logo=postman&label=Postman&color=EF5B25)](https://www.postman.com/maintenance-astronaut-2993290/workspace/brenoepics/collection/18589822-dfe7a640-9b94-47a8-b19f-46cb9cc8843e?action=share&creator=18589822)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=brenoepics_at4j&metric=coverage)](https://sonarcloud.io/summary/new_code?id=brenoepics_at4j)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=brenoepics_at4j&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=brenoepics_at4j)
 
 An unofficial Java library for translating text using Azure AI Cognitive Services.
 
@@ -22,6 +22,7 @@ An unofficial Java library for translating text using Azure AI Cognitive Service
 - [JavaDoc](https://brenoepics.github.io/at4j/javadoc/)
 
 ## 🎉 Basic Usage
+
 > [!NOTE]
 > Example repository [Azure-Translator-Example](https://github.com/brenoepics/Azure-Translator-Example)
 
@@ -55,6 +56,7 @@ public class ExampleTranslator {
  }
 }
 ```
+
 <details>
      <summary>Expected Output</summary>
 
@@ -63,6 +65,7 @@ pt: Olá, Mundo!
 es: ¡Hola mundo!
 fr: Salut tout le monde!
 ```
+
 </details>
 
 ## 📦 Download / Installation
@@ -88,6 +91,7 @@ implementation group: 'io.github.brenoepics', name: 'at4j', version: '1.0.0'
     <version>1.0.0</version>
 </dependency>
 ```
+
 </details>
 <details>
   <summary>Sbt</summary>
@@ -95,9 +99,11 @@ implementation group: 'io.github.brenoepics', name: 'at4j', version: '1.0.0'
 ```sbt
 libraryDependencies += "io.github.brenoepics" % "at4j" % "1.0.0"
 ```
+
 </details>
 
 ### 🔑 Azure Translator Keys
+
 > [!WARNING]
 > Remember to **keep your keys secure and do not share them publicly**. If you believe that a key has been compromised, you must regenerate it in Azure's Panel.
 > For more information, visit the [Azure portal](https://portal.azure.com/).
@@ -116,11 +122,12 @@ More info at our [Docs](https://brenoepics.github.io/at4j/guide/installation.htm
 ## 📋 Version Numbers
 
 The version number has a 3-digit format: `major.minor.trivial`
-* `major`: Increased extremely rarely to mark a major release (usually a rewrite affecting very huge parts of the library).
-* `minor`: Any backward incompatible change to the api wrapper.
-* `trivial`: A backward compatible change to the **api wrapper**. This is usually an important bugfix (or a bunch of smaller ones)
- or a backwards compatible feature addition.
- 
+
+- `major`: Increased extremely rarely to mark a major release (usually a rewrite affecting very huge parts of the library).
+- `minor`: Any backward incompatible change to the api wrapper.
+- `trivial`: A backward compatible change to the **api wrapper**. This is usually an important bugfix (or a bunch of smaller ones)
+  or a backwards compatible feature addition.
+
 ## 🔨 Deprecation Policy
 
 A method or class that is marked as deprecated can be removed with the next minor release (but it will usually stay for
